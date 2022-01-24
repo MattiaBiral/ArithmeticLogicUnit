@@ -1,0 +1,99 @@
+:root {
+    --color-1: rgb(37, 37, 37);
+    --color-2: rgb(230, 230, 230);
+}
+
+html {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+a {
+    color: darkgrey;
+}
+
+a:hover {
+    color: darkslategray;
+}
+
+img {
+    border-radius: 10px;
+}
+
+* {
+    font-family: 'Dongle', sans-serif;
+}
+
+.title {
+    padding-left: 100px;
+    font-size: 100px;
+    margin-top: 0px;
+    line-height: 100px;
+}
+
+.content {
+    padding-left: 120px;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 500px;
+    height: 100%;
+    border: var(--color-2) solid 4px;
+}
+
+.links-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 60px;
+    padding: 20px;
+    border: var(--color-2) solid 4px;
+    line-height: 55px;
+}
+
+.box-title {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 60px;
+}
+
+.box-content {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 40px;
+    line-height: 35px;
+}
+
+.image {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Arithmetic Logic Unit</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title">Arithmetic Logic Unit</div>
+        <div class="content">Di <b>Biral Mattia</b>, <b>Lorenzo Ianotto</b>, <b>John Piccin</b> e <b>Alex Bontempo</b></div>
+        <div class="page">
+            <div class="box">
+                <div class="box-title">Decoder</div>
+                <div class="box-content">Il decoder è un circuito che presi in input n controlli seleziona una delle 2^n righe sull output</div>
+                <div class="image"><img src="./src/img/decoder.png" alt="decoder" width="100%"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">Logic Section</div>
+                <div class="box-content">La sezione logica riceve in input due variabili booleane e le combina attraverso le tre operazioni logiche base</div>
+                <div class="image"><img src="./src/img/logic_section.png" alt="logic section" width="100%"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">Full Adder</div>
+                <div class="box-content">Il sommatore completo riceve in input tre variabili booleane: due cifre più un riporto in entrata; resituisce
+                    la loro somma e il riporto in uscita
+                </div>
+                <div class="image"><img src="./src/img/full_adder.png" alt="full adder" width="100%"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">Output Section</div>
+                <div class="box-content">La sezione di output lascia passare soltanto il risultato selezionato compattando il tutto con una cascata di porte
+                    or
+                </div>
+                <div class="image"><img src="./src/img/output_section.png" alt="output section" width="100%"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">1 Bit ALU</div>
+                <div class="box-content">Un ALU ad un bit mette insieme tutti gli elementi visti prima, prende 5 variabili booleane in input: due cifre,
+                    un riporto in entrata e due controlli del decoder; resituisce il risultato dell'operazione logica selezionata ed il riporto in uscita
+                </div>
+                <div class="image"><img src="./src/img/1_bit_alu.png" alt="1 bit alu" width="100%"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">2 Bit ALU</div>
+                <div class="box-content">Un ALU a 2 bit mette semplicemente insieme due ALU ad un bit passando il carry in uscita della meno significativa
+                    a quello in entrata della più significativa
+                </div>
+                <div class="image"><img src="./src/img/2_bit_alu.png" alt="2 bit alu" width="100%"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">Stack Error Section</div>
+                <div class="box-content">La sezione di stack error controlla se l'ultimo e il penultimo riporto sono uguali, in tal caso l'operazione in
+                    complemento a due ha restituito il risultato corretto, altrimenti non è possibile svoglere l'operazione su tal numero di bit
+                </div>
+                <div class="image"><img src="./src/img/stack_error_section.png" alt="stack error section" width="100%"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">Most Significant Bit ALU</div>
+                <div class="box-content">Per eseguire un operazione sulla cifra più significativa dei due numeri possiamo utilizzare un ALU con la sezione
+                    di stack error integrata in modo da restituirci anche quello senza utilizzarne una esterna
+                </div>
+                <div class="image"><img src="./src/img/most_significant_bit_alu.png" alt="most significant bit alu" width="100%"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">8 Bit ALU</div>
+                <div class="box-content">Un ALU ad 8 bit è semplicemente formata da 4 ALU a 2 bit, le quali sono costruite su 4 breadboard (una di esse,
+                    la più significativa, contiene anche una sezione di stack error), prende in input: il carry in entrata, due numeri a 8 bit e due controlli
+                    del decoder; e resituisce in output: un numero a 8 bit, il carry in uscita e lo stack error
+                </div>
+                <div class="image"><img src="./src/img/8_bit_alu.png" alt="8 bit alu" width="100%"></div>
+            </div>
+        </div>
+        <div class="links">
+            <div class="links-box">
+                LogiSim Evolution program: <a href="https://github.com/logisim-evolution/logisim-evolution/releases/latest">Github link</a>
+            </div>
+        </div>
+        <div class="links">
+            <div class="links-box">
+                Project file: <a href="https://github.com/mattiabiral/arithmeticlogicunit/tree/main/src/project">Github link</a>
+            </div>
+        </div>
+    </body>
+</html>
