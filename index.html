@@ -48,6 +48,26 @@
                 <div class="image"><img src="./src/img/1_bit_alu.png" alt="1 bit alu" width="100%"></div>
             </div>
             <div class="box">
+                <div class="box-title">1 Bit ALU Logic Gates</div>
+                <div class="box-content">ALU ad un bit formata dall'unione delle varie sezioni viste precedentemente, ma senza decoder, composta da porte logiche
+                </div>
+                <div class="image"><img src="./src/img/1_bit_alu_full.png" alt="1 bit alu full" width="100%"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">1 Bit ALU Electric Circuit</div>
+                <div class="box-content">Applicazione dell'ALU ad un bit attraverso integrati che realizzano le funzioni
+                    logiche, collegati come nel circuito visto precedentemente, compreso di decoder
+                </div>
+                <div class="image"><img src="./src/img/1_bit_alu_chips.png" alt="1 bit alu full" width="100%"></div>
+            </div>
+            <div class="box">
+                <div class="box-title">Use Of The Decoder</div>
+                <div class="box-content">Il decoder serve a selezionare l'operazione che l'ALU deve svolgere, se delle ALU si collegano insieme per formare un ALU
+                    a più bit, dato che dovranno tutte svolgere lo stesso tipo di operazione, si puo' omettere il decoder nelle varie ALU e metterne uno solo collegato a tutte
+                </div>
+                <div class="image"><img src="./src/img/decoder_or_not.png" alt="1 bit alu full" width="100%"></div>
+            </div>
+            <div class="box">
                 <div class="box-title">2 Bit ALU</div>
                 <div class="box-content">Un ALU a 2 bit mette semplicemente insieme due ALU ad un bit passando il carry in uscita della meno significativa
                     a quello in entrata della più significativa
@@ -57,7 +77,7 @@
             <div class="box">
                 <div class="box-title">Stack Error Section</div>
                 <div class="box-content">La sezione di stack error controlla se l'ultimo e il penultimo riporto sono uguali, in tal caso l'operazione in
-                    complemento a due ha restituito il risultato corretto, altrimenti non è possibile svoglere l'operazione su tal numero di bit
+                    complemento a due ha restituito il risultato corretto, altrimenti non è possibile svolgere l'operazione su tal numero di bit
                 </div>
                 <div class="image"><img src="./src/img/stack_error_section.png" alt="stack error section" width="100%"></div>
             </div>
@@ -89,7 +109,7 @@
         </div>
         <div class="links">
             <div class="links-box">
-                Project file: <a href="https://github.com/MattiaBiral/ArithmeticLogicUnit/releases/latest" target="blank">Github link</a>
+                LogiSim project file: <a href="https://github.com/MattiaBiral/ArithmeticLogicUnit/releases/latest" target="blank">Github link</a>
             </div>
         </div>
     </body>
